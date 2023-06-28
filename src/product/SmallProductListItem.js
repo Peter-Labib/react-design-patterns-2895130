@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const SmallProductListItem = ({person}) => {
-    const {name, age} = person
+const SmallProductListItem = ({ product }) => {
+  const { name, price } = product;
   return (
-    <p>name:{name} age:{age}</p>
-  )
-}
+    <div>
+      {name} - {price}
+    </div>
+  );
+};
 
-export default SmallProductListItem
+export default SmallProductListItem;

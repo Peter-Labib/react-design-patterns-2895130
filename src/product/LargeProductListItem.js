@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const LargeProductListItem = () => {
+const LargeProductListItem = ({ product }) => {
+  const { name, price, description, rating } = product;
   return (
-    <div>LargeProductListItem</div>
-  )
-}
+    <>
+      <h3>{name}</h3>
+      <p>price: {price}</p>
+      <h3>description</h3>
+      <p>{description}</p>
+      <p>avg rating: {rating}</p>
+    </>
+  );
+};
 
-export default LargeProductListItem
+export default LargeProductListItem;
